@@ -97,6 +97,7 @@ gulp.task('default', ['compile']);
 ```
 
 ### Options:
+**data**: [object| *The data that is exposed in the twig files. Or use gulp-data to pipe files directly into gulp-twig*
 
 **base**: [string] *sets the views base folder. Extends can be loaded relative to this path*
 
@@ -110,7 +111,7 @@ gulp.task('default', ['compile']);
 
 **trace**: [true|false] *enables tracing info logging (defaults to false)*
 
-**extend**: [function] *extends Twig with new tags types. [Read more here](https://github.com/justjohn/twig.js/wiki/Extending-twig.js-With-Custom-Tags)*
+**extend**: [function (Twig)] *extends Twig with new tags types. The Twig attribute is Twig.js's internal object. [Read more here](https://github.com/justjohn/twig.js/wiki/Extending-twig.js-With-Custom-Tags)*
 
 **functions**: [array] *extends Twig with given function objects. (default to undefined)*
 ```javascript
